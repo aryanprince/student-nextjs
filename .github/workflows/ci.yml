@@ -80,7 +80,7 @@ jobs:
         uses: ./tooling/github-actions/setup
 
       - name: Run local databases with Docker Compose
-        uses: hoverkraft-tech/compose-action@v2.0.1
+        uses: hoverkraft-tech/compose-action@v2.2.0
 
       - name: Setup database with migrations and seed data
         run: pnpm db:setup
@@ -100,7 +100,7 @@ jobs:
         uses: ./tooling/github-actions/setup
 
       - name: Run local databases with Docker Compose
-        uses: hoverkraft-tech/compose-action@v2.0.1
+        uses: hoverkraft-tech/compose-action@v2.2.0
 
       - name: Setup database with migrations and seed data
         run: pnpm db:setup
