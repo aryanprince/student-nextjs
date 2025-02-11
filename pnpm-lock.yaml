@@ -34,8 +34,8 @@ catalogs:
       specifier: ^10.45.2
       version: 10.45.2
     '@types/node':
-      specifier: ^18.19.42
-      version: 18.19.42
+      specifier: ^22.0.0
+      version: 22.5.0
     autoprefixer:
       specifier: ^10.4.19
       version: 10.4.19
@@ -246,7 +246,7 @@ importers:
         version: link:../../tooling/config-eslint
       '@types/node':
         specifier: 'catalog:'
-        version: 18.19.42
+        version: 22.5.0
       '@types/react':
         specifier: catalog:react18
         version: 18.3.3
@@ -267,7 +267,7 @@ importers:
         version: 3.3.3
       tailwindcss:
         specifier: 'catalog:'
-        version: 3.4.7(ts-node@10.9.2(@types/node@18.19.42)(typescript@5.3.3))
+        version: 3.4.7(ts-node@10.9.2(@types/node@22.5.0)(typescript@5.3.3))
       typescript:
         specifier: 'catalog:'
         version: 5.3.3
@@ -373,7 +373,7 @@ importers:
         version: link:../../tooling/config-eslint
       '@types/node':
         specifier: 'catalog:'
-        version: 18.19.42
+        version: 22.5.0
       '@types/react':
         specifier: catalog:react18
         version: 18.3.3
@@ -397,7 +397,7 @@ importers:
         version: 3.3.3
       tailwindcss:
         specifier: 'catalog:'
-        version: 3.4.7(ts-node@10.9.2(@types/node@18.19.42)(typescript@5.3.3))
+        version: 3.4.7(ts-node@10.9.2(@types/node@22.5.0)(typescript@5.3.3))
       typescript:
         specifier: 'catalog:'
         version: 5.3.3
@@ -518,7 +518,7 @@ importers:
         version: 15.0.7(@types/react@18.3.3)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@types/node':
         specifier: 'catalog:'
-        version: 18.19.42
+        version: 22.5.0
       '@types/react':
         specifier: catalog:react18
         version: 18.3.3
@@ -527,7 +527,7 @@ importers:
         version: 18.3.0
       '@vitejs/plugin-react':
         specifier: ^4.3.1
-        version: 4.3.1(vite@5.3.5(@types/node@18.19.42))
+        version: 4.3.1(vite@5.3.5(@types/node@22.5.0))
       autoprefixer:
         specifier: 'catalog:'
         version: 10.4.19(postcss@8.4.40)
@@ -548,13 +548,13 @@ importers:
         version: 3.3.3
       tailwindcss:
         specifier: 'catalog:'
-        version: 3.4.7(ts-node@10.9.2(@types/node@18.19.42)(typescript@5.3.3))
+        version: 3.4.7(ts-node@10.9.2(@types/node@22.5.0)(typescript@5.3.3))
       typescript:
         specifier: 'catalog:'
         version: 5.3.3
       vitest:
         specifier: ^1.6.0
-        version: 1.6.0(@types/node@18.19.42)(jsdom@24.1.1)
+        version: 1.6.0(@types/node@22.5.0)(jsdom@24.1.1)
 
   packages/ui:
     dependencies:
@@ -942,9 +942,11 @@ packages:
 
   '@esbuild-kit/core-utils@3.3.2':
     resolution: {integrity: sha512-sPRAnw9CdSsRmEtnsl2WXWdyquogVpB3yZ3dgwJfe8zrOzTsV7cJvmwrKVa+0ma5BoiGJ+BoqkMvawbayKUsqQ==}
+    deprecated: 'Merged into tsx: https://tsx.is'
 
   '@esbuild-kit/esm-loader@2.6.5':
     resolution: {integrity: sha512-FxEMIkJKnodyA1OaCUoEvbYRkoZlLZ4d/eXFu9Fh8CbBBgP5EmZxrfTRyN0qpXZ4vOvqnE5YdRdcrmUUXuU+dA==}
+    deprecated: 'Merged into tsx: https://tsx.is'
 
   '@esbuild/aix-ppc64@0.19.12':
     resolution: {integrity: sha512-bmoCYyWdEL3wDQIVbcyzRyeKLgk2WtWLTWz1ZIAZF/EGbNOwSA6ew3PftJ1PqMiOOGu0OyFMzG53L0zqIpPeNA==}
@@ -2334,9 +2336,6 @@ packages:
   '@types/minimatch@5.1.2':
     resolution: {integrity: sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==}
 
-  '@types/node@18.19.42':
-    resolution: {integrity: sha512-d2ZFc/3lnK2YCYhos8iaNIYu9Vfhr92nHiyJHRltXWjXUBjEE+A4I58Tdbnw4VhggSW+2j5y5gTrLs4biNnubg==}
-
   '@types/node@22.5.0':
     resolution: {integrity: sha512-DkFrJOe+rfdHTqqMg0bSNlGlQ85hSoh2TPzZyhHsXnMtligRWpxUySiyw8FY14ITt24HVCiQPWxS3KO/QlGmWg==}
 
@@ -3248,6 +3247,7 @@ packages:
   eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@9.6.1:
@@ -3908,6 +3908,7 @@ packages:
 
   lodash.get@4.4.2:
     resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
+    deprecated: This package is deprecated. Use the optional chaining (?.) operator instead.
 
   lodash.isplainobject@4.0.6:
     resolution: {integrity: sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==}
@@ -4198,9 +4199,11 @@ packages:
 
   oslo@1.2.0:
     resolution: {integrity: sha512-OoFX6rDsNcOQVAD2gQD/z03u4vEjWZLzJtwkmgfRF+KpQUXwdgEXErD7zNhyowmHwHefP+PM9Pw13pgpHMRlzw==}
+    deprecated: Package is no longer supported. Please see https://oslojs.dev for the successor project.
 
   oslo@1.2.1:
     resolution: {integrity: sha512-HfIhB5ruTdQv0XX2XlncWQiJ5SIHZ7NHZhVyHth0CSZ/xzge00etRyYy/3wp/Dsu+PkxMC+6+B2lS/GcKoewkA==}
+    deprecated: Package is no longer supported. Please see https://oslojs.dev for the successor project.
 
   p-limit@3.1.0:
     resolution: {integrity: sha512-TYOanM3wGwNGsZN2cVTYPArw454xnXj5qmWF1bEoAc4+cU/ol7GVh7odevjp1FNHduHc3KZMcFduxU5Xc6uJRQ==}
@@ -5090,9 +5093,6 @@ packages:
 
   unbox-primitive@1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
-
-  undici-types@5.26.5:
-    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
 
   undici-types@6.19.8:
     resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
@@ -6725,10 +6725,6 @@ snapshots:
 
   '@types/minimatch@5.1.2': {}
 
-  '@types/node@18.19.42':
-    dependencies:
-      undici-types: 5.26.5
-
   '@types/node@22.5.0':
     dependencies:
       undici-types: 6.19.8
@@ -6840,14 +6836,14 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitejs/plugin-react@4.3.1(vite@5.3.5(@types/node@18.19.42))':
+  '@vitejs/plugin-react@4.3.1(vite@5.3.5(@types/node@22.5.0))':
     dependencies:
       '@babel/core': 7.24.9
       '@babel/plugin-transform-react-jsx-self': 7.24.7(@babel/core@7.24.9)
       '@babel/plugin-transform-react-jsx-source': 7.24.7(@babel/core@7.24.9)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 5.3.5(@types/node@18.19.42)
+      vite: 5.3.5(@types/node@22.5.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -9053,14 +9049,6 @@ snapshots:
       camelcase-css: 2.0.1
       postcss: 8.4.40
 
-  postcss-load-config@4.0.2(postcss@8.4.40)(ts-node@10.9.2(@types/node@18.19.42)(typescript@5.3.3)):
-    dependencies:
-      lilconfig: 3.1.2
-      yaml: 2.5.0
-    optionalDependencies:
-      postcss: 8.4.40
-      ts-node: 10.9.2(@types/node@18.19.42)(typescript@5.3.3)
-
   postcss-load-config@4.0.2(postcss@8.4.40)(ts-node@10.9.2(@types/node@22.5.0)(typescript@5.3.3)):
     dependencies:
       lilconfig: 3.1.2
@@ -9576,33 +9564,6 @@ snapshots:
     dependencies:
       tailwindcss: 3.4.7(ts-node@10.9.2(@types/node@22.5.0)(typescript@5.3.3))
 
-  tailwindcss@3.4.7(ts-node@10.9.2(@types/node@18.19.42)(typescript@5.3.3)):
-    dependencies:
-      '@alloc/quick-lru': 5.2.0
-      arg: 5.0.2
-      chokidar: 3.6.0
-      didyoumean: 1.2.2
-      dlv: 1.1.3
-      fast-glob: 3.3.2
-      glob-parent: 6.0.2
-      is-glob: 4.0.3
-      jiti: 1.21.6
-      lilconfig: 2.1.0
-      micromatch: 4.0.7
-      normalize-path: 3.0.0
-      object-hash: 3.0.0
-      picocolors: 1.0.1
-      postcss: 8.4.40
-      postcss-import: 15.1.0(postcss@8.4.40)
-      postcss-js: 4.0.1(postcss@8.4.40)
-      postcss-load-config: 4.0.2(postcss@8.4.40)(ts-node@10.9.2(@types/node@18.19.42)(typescript@5.3.3))
-      postcss-nested: 6.2.0(postcss@8.4.40)
-      postcss-selector-parser: 6.1.1
-      resolve: 1.22.8
-      sucrase: 3.35.0
-    transitivePeerDependencies:
-      - ts-node
-
   tailwindcss@3.4.7(ts-node@10.9.2(@types/node@22.5.0)(typescript@5.3.3)):
     dependencies:
       '@alloc/quick-lru': 5.2.0
@@ -9688,25 +9649,6 @@ snapshots:
       typescript: 5.3.3
 
   ts-interface-checker@0.1.13: {}
-
-  ts-node@10.9.2(@types/node@18.19.42)(typescript@5.3.3):
-    dependencies:
-      '@cspotcode/source-map-support': 0.8.1
-      '@tsconfig/node10': 1.0.11
-      '@tsconfig/node12': 1.0.11
-      '@tsconfig/node14': 1.0.3
-      '@tsconfig/node16': 1.0.4
-      '@types/node': 18.19.42
-      acorn: 8.12.1
-      acorn-walk: 8.3.3
-      arg: 4.1.3
-      create-require: 1.1.1
-      diff: 4.0.2
-      make-error: 1.3.6
-      typescript: 5.3.3
-      v8-compile-cache-lib: 3.0.1
-      yn: 3.1.1
-    optional: true
 
   ts-node@10.9.2(@types/node@22.5.0)(typescript@5.3.3):
     dependencies:
@@ -9827,8 +9769,6 @@ snapshots:
       has-symbols: 1.0.3
       which-boxed-primitive: 1.0.2
 
-  undici-types@5.26.5: {}
-
   undici-types@6.19.8: {}
 
   unicorn-magic@0.1.0: {}
@@ -9888,13 +9828,13 @@ snapshots:
 
   validate-npm-package-name@5.0.1: {}
 
-  vite-node@1.6.0(@types/node@18.19.42):
+  vite-node@1.6.0(@types/node@22.5.0):
     dependencies:
       cac: 6.7.14
       debug: 4.3.6
       pathe: 1.1.2
       picocolors: 1.0.1
-      vite: 5.3.5(@types/node@18.19.42)
+      vite: 5.3.5(@types/node@22.5.0)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -9905,16 +9845,16 @@ snapshots:
       - supports-color
       - terser
 
-  vite@5.3.5(@types/node@18.19.42):
+  vite@5.3.5(@types/node@22.5.0):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.40
       rollup: 4.19.1
     optionalDependencies:
-      '@types/node': 18.19.42
+      '@types/node': 22.5.0
       fsevents: 2.3.3
 
-  vitest@1.6.0(@types/node@18.19.42)(jsdom@24.1.1):
+  vitest@1.6.0(@types/node@22.5.0)(jsdom@24.1.1):
     dependencies:
       '@vitest/expect': 1.6.0
       '@vitest/runner': 1.6.0
@@ -9933,11 +9873,11 @@ snapshots:
       strip-literal: 2.1.0
       tinybench: 2.8.0
       tinypool: 0.8.4
-      vite: 5.3.5(@types/node@18.19.42)
-      vite-node: 1.6.0(@types/node@18.19.42)
+      vite: 5.3.5(@types/node@22.5.0)
+      vite-node: 1.6.0(@types/node@22.5.0)
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@types/node': 18.19.42
+      '@types/node': 22.5.0
       jsdom: 24.1.1
     transitivePeerDependencies:
       - less
